@@ -1,229 +1,102 @@
 <svg fill="none" width="850" height="460" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        * {
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
-        }
-        .banner {
-          width: 850px;
-          height: 460px;
-          background: #0d1117;
-          background-image: 
-            radial-gradient(at 0% 0%, rgba(56, 139, 253, 0.15) 0px, transparent 50%),
-            radial-gradient(at 100% 100%, rgba(46, 160, 67, 0.15) 0px, transparent 50%);
-          border: 1px solid #30363d;
-          border-radius: 16px;
-          padding: 32px;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-          color: #c9d1d9;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        }
-
-        /* Top Header */
-        .header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          border-bottom: 1px solid rgba(48, 54, 61, 0.6);
-          padding-bottom: 16px;
-        }
-        .brand {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-        }
-        .brand-badge {
-          background: #238636;
-          color: #ffffff;
-          font-size: 11px;
-          font-weight: 700;
-          padding: 4px 10px;
-          border-radius: 20px;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-        }
-        .brand-title {
-          font-size: 20px;
-          font-weight: 700;
-          color: #f0f6fc;
-        }
-        .status-pill {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          background: #161b22;
-          border: 1px solid #30363d;
-          padding: 6px 12px;
-          border-radius: 20px;
-          font-size: 12px;
-          color: #8b949e;
-        }
-        .dot {
-          width: 8px;
-          height: 8px;
-          background-color: #3fb950;
-          border-radius: 50%;
-        }
-
-        /* Hero Content */
-        .hero {
-          margin-top: 16px;
-        }
-        .hero-title {
-          font-size: 32px;
-          font-weight: 800;
-          color: #ffffff;
-          line-height: 1.25;
-          margin-bottom: 8px;
-        }
-        .hero-title span {
-          background: linear-gradient(90deg, #58a6ff, #a5d6ff);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-        .hero-subtitle {
-          font-size: 15px;
-          color: #8b949e;
-          max-width: 700px;
-          line-height: 1.5;
-        }
-
-        /* Grid Infographic Section */
-        .grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 16px;
-          margin-top: 16px;
-        }
-        .card {
-          background: rgba(22, 27, 34, 0.7);
-          border: 1px solid #30363d;
-          border-radius: 10px;
-          padding: 16px;
-          display: flex;
-          flex-direction: column;
-          gap: 6px;
-        }
-        .card-icon {
-          font-size: 18px;
-        }
-        .card-title {
-          font-size: 14px;
-          font-weight: 600;
-          color: #f0f6fc;
-        }
-        .card-desc {
-          font-size: 12px;
-          color: #8b949e;
-          line-height: 1.4;
-        }
-
-        /* Footer & Actions */
-        .footer {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-top: 20px;
-          padding-top: 16px;
-          border-top: 1px solid rgba(48, 54, 61, 0.6);
-        }
-        .tags {
-          display: flex;
-          gap: 8px;
-        }
-        .tag {
-          background: #21262d;
-          color: #8b949e;
-          font-size: 11px;
-          padding: 4px 10px;
-          border-radius: 6px;
-          border: 1px solid #30363d;
-        }
-        .cta-group {
-          display: flex;
-          gap: 12px;
-        }
-        .btn-primary {
-          background: #238636;
-          color: #ffffff;
-          font-size: 13px;
-          font-weight: 600;
-          padding: 8px 18px;
-          border-radius: 6px;
-          border: 1px solid rgba(240, 246, 252, 0.1);
-          display: flex;
-          align-items: center;
-          gap: 6px;
-        }
-        .btn-secondary {
-          background: #21262d;
-          color: #c9d1d9;
-          font-size: 13px;
-          font-weight: 600;
-          padding: 8px 18px;
-          border-radius: 6px;
-          border: 1px solid #30363d;
-          display: flex;
-          align-items: center;
-          gap: 6px;
-        }
-      </style>
-
-      <div class="banner">
-        <!-- Header -->
-        <div class="header">
-          <div class="brand">
-            <span class="brand-badge">FEATURED REPO</span>
-            <span class="brand-title">0w0 Studio</span>
-          </div>
-          <div class="status-pill">
-            <span class="dot"></span> Active R&amp;D Core
-          </div>
-        </div>
-
-        <!-- Hero Title -->
-        <div class="hero">
-          <h1 class="hero-title">Architecting <span>Cognitive Intelligence</span> &amp; Systems</h1>
-          <p class="hero-subtitle">High-performance research lab dedicated to autonomous cognitive models, custom hardware engineering, and advanced systems architecture.</p>
-        </div>
-
-        <!-- Infographic Cards -->
-        <div class="grid">
-          <div class="card">
-            <span class="card-icon">🧠</span>
-            <div class="card-title">Cognitive Research</div>
-            <div class="card-desc">Self-calibrating neural architectures &amp; autonomous agent framework.</div>
-          </div>
-          <div class="card">
-            <span class="card-icon">⚡</span>
-            <div class="card-title">Hardware Integration</div>
-            <div class="card-desc">Custom silicon design, embedded PCB logic, and precise robotic control.</div>
-          </div>
-          <div class="card">
-            <span class="card-icon">🛠️</span>
-            <div class="card-title">Pure Engineering</div>
-            <div class="card-desc">Low-latency Python algorithms, custom kernels, and systems programming.</div>
-          </div>
-        </div>
-
-        <!-- Footer / CTA -->
-        <div class="footer">
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">Cognitive AI</span>
-            <span class="tag">Hardware</span>
-          </div>
-          <div class="cta-group">
-            <div class="btn-secondary">⭐ Star Project</div>
-            <div class="btn-primary">🚀 Explore Repositories →</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </foreignObject>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700;800&display=swap');
+    </style>
+  </defs>
+  
+  <!-- Background with gradient -->
+  <defs>
+    <radialGradient id="grad1" cx="0%" cy="0%" r="50%">
+      <stop offset="0%" style="stop-color:rgba(56, 139, 253, 0.15);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(56, 139, 253, 0);stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="grad2" cx="100%" cy="100%" r="50%">
+      <stop offset="0%" style="stop-color:rgba(46, 160, 67, 0.15);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(46, 160, 67, 0);stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="850" height="460" fill="#0d1117"/>
+  <rect width="850" height="460" fill="url(#grad1)"/>
+  <rect width="850" height="460" fill="url(#grad2)"/>
+  <rect width="850" height="460" fill="none" stroke="#30363d" stroke-width="1" rx="16"/>
+  
+  <!-- Header border -->
+  <line x1="32" y1="60" x2="818" y2="60" stroke="#30363d" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Brand badge background -->
+  <rect x="32" y="35" width="100" height="24" fill="#238636" rx="12"/>
+  
+  <!-- Status pill background -->
+  <rect x="705" y="35" width="113" height="24" fill="#161b22" stroke="#30363d" stroke-width="1" rx="12"/>
+  
+  <!-- Status dot -->
+  <circle cx="716" cy="47" r="4" fill="#3fb950"/>
+  
+  <!-- Footer border -->
+  <line x1="32" y1="400" x2="818" y2="400" stroke="#30363d" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Text elements -->
+  <text x="40" y="53" font-family="Roboto, sans-serif" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.5">FEATURED REPO</text>
+  <text x="147" y="53" font-family="Roboto, sans-serif" font-size="20" font-weight="700" fill="#f0f6fc">0w0 Studio</text>
+  <text x="724" y="53" font-family="Roboto, sans-serif" font-size="12" fill="#8b949e">Active R&D Core</text>
+  
+  <!-- Hero title -->
+  <text x="32" y="95" font-family="Roboto, sans-serif" font-size="32" font-weight="800" fill="#ffffff">Architecting</text>
+  <text x="32" y="130" font-family="Roboto, sans-serif" font-size="32" font-weight="800" fill="#ffffff">Cognitive</text>
+  <text x="357" y="130" font-family="Roboto, sans-serif" font-size="32" font-weight="800" fill="url(#titleGrad)">Intelligence</text>
+  <text x="587" y="130" font-family="Roboto, sans-serif" font-size="32" font-weight="800" fill="#ffffff">&amp;</text>
+  <text x="612" y="130" font-family="Roboto, sans-serif" font-size="32" font-weight="800" fill="#ffffff">Systems</text>
+  
+  <defs>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a5d6ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Hero subtitle -->
+  <text x="32" y="160" font-family="Roboto, sans-serif" font-size="15" fill="#8b949e" font-weight="400">High-performance research lab dedicated to autonomous cognitive models, custom</text>
+  <text x="32" y="180" font-family="Roboto, sans-serif" font-size="15" fill="#8b949e" font-weight="400">hardware engineering, and advanced systems architecture.</text>
+  
+  <!-- Card 1 background -->
+  <rect x="32" y="200" width="254" height="160" fill="rgba(22, 27, 34, 0.7)" stroke="#30363d" stroke-width="1" rx="10"/>
+  <text x="45" y="225" font-family="Roboto, sans-serif" font-size="18">🧠</text>
+  <text x="45" y="245" font-family="Roboto, sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Cognitive Research</text>
+  <text x="45" y="263" font-family="Roboto, sans-serif" font-size="12" fill="#8b949e" font-weight="400">Self-calibrating neural architectures &amp;</text>
+  <text x="45" y="280" font-family="Roboto, sans-serif" font-size="12" fill="#8b949e" font-weight="400">autonomous agent framework.</text>
+  
+  <!-- Card 2 background -->
+  <rect x="308" y="200" width="254" height="160" fill="rgba(22, 27, 34, 0.7)" stroke="#30363d" stroke-width="1" rx="10"/>
+  <text x="321" y="225" font-family="Roboto, sans-serif" font-size="18">⚡</text>
+  <text x="321" y="245" font-family="Roboto, sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Hardware Integration</text>
+  <text x="321" y="263" font-family="Roboto, sans-serif" font-size="12" fill="#8b949e" font-weight="400">Custom silicon design, embedded PCB</text>
+  <text x="321" y="280" font-family="Roboto, sans-serif" font-size="12" fill="#8b949e" font-weight="400">logic, and precise robotic control.</text>
+  
+  <!-- Card 3 background -->
+  <rect x="584" y="200" width="254" height="160" fill="rgba(22, 27, 34, 0.7)" stroke="#30363d" stroke-width="1" rx="10"/>
+  <text x="597" y="225" font-family="Roboto, sans-serif" font-size="18">🛠️</text>
+  <text x="597" y="245" font-family="Roboto, sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Pure Engineering</text>
+  <text x="597" y="263" font-family="Roboto, sans-serif" font-size="12" fill="#8b949e" font-weight="400">Low-latency Python algorithms, custom</text>
+  <text x="597" y="280" font-family="Roboto, sans-serif" font-size="12" fill="#8b949e" font-weight="400">kernels, and systems programming.</text>
+  
+  <!-- Tags -->
+  <rect x="32" y="410" width="60" height="24" fill="#21262d" stroke="#30363d" stroke-width="1" rx="6"/>
+  <text x="42" y="427" font-family="Roboto, sans-serif" font-size="11" fill="#8b949e">Python</text>
+  
+  <rect x="100" y="410" width="95" height="24" fill="#21262d" stroke="#30363d" stroke-width="1" rx="6"/>
+  <text x="110" y="427" font-family="Roboto, sans-serif" font-size="11" fill="#8b949e">Cognitive AI</text>
+  
+  <rect x="203" y="410" width="75" height="24" fill="#21262d" stroke="#30363d" stroke-width="1" rx="6"/>
+  <text x="213" y="427" font-family="Roboto, sans-serif" font-size="11" fill="#8b949e">Hardware</text>
+  
+  <!-- Secondary button -->
+  <rect x="670" y="410" width="138" height="24" fill="#21262d" stroke="#30363d" stroke-width="1" rx="6"/>
+  <text x="685" y="427" font-family="Roboto, sans-serif" font-size="13" font-weight="600" fill="#c9d1d9">⭐ Star Project</text>
+  
+  <!-- Primary button -->
+  <rect x="720" y="410" width="98" height="24" fill="#238636" stroke="rgba(240, 246, 252, 0.1)" stroke-width="1" rx="6"/>
+  <text x="730" y="427" font-family="Roboto, sans-serif" font-size="13" font-weight="600" fill="#ffffff">🚀 Explore →</text>
 </svg>
