@@ -1,22 +1,228 @@
-<svg fill="none" width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" width="850" height="460" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
-        .container {
-          background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
-          border: 1px solid #30363d;
-          border-radius: 12px;
-          padding: 24px;
-          font-family: system-ui, -apple-system, sans-serif;
-          color: #c9d1d9;
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
         }
-        .title { color: #58a6ff; font-size: 24px; margin: 0 0 8px 0; }
-        .badge { background: #238636; color: white; padding: 4px 8px; border-radius: 20px; font-size: 12px; }
+        .banner {
+          width: 850px;
+          height: 460px;
+          background: #0d1117;
+          background-image: 
+            radial-gradient(at 0% 0%, rgba(56, 139, 253, 0.15) 0px, transparent 50%),
+            radial-gradient(at 100% 100%, rgba(46, 160, 67, 0.15) 0px, transparent 50%);
+          border: 1px solid #30363d;
+          border-radius: 16px;
+          padding: 32px;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          color: #c9d1d9;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        /* Top Header */
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid rgba(48, 54, 61, 0.6);
+          padding-bottom: 16px;
+        }
+        .brand {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+        .brand-badge {
+          background: #238636;
+          color: #ffffff;
+          font-size: 11px;
+          font-weight: 700;
+          padding: 4px 10px;
+          border-radius: 20px;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+        .brand-title {
+          font-size: 20px;
+          font-weight: 700;
+          color: #f0f6fc;
+        }
+        .status-pill {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          background: #161b22;
+          border: 1px solid #30363d;
+          padding: 6px 12px;
+          border-radius: 20px;
+          font-size: 12px;
+          color: #8b949e;
+        }
+        .dot {
+          width: 8px;
+          height: 8px;
+          background-color: #3fb950;
+          border-radius: 50%;
+        }
+
+        /* Hero Content */
+        .hero {
+          margin-top: 16px;
+        }
+        .hero-title {
+          font-size: 32px;
+          font-weight: 800;
+          color: #ffffff;
+          line-height: 1.25;
+          margin-bottom: 8px;
+        }
+        .hero-title span {
+          background: linear-gradient(90deg, #58a6ff, #a5d6ff);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .hero-subtitle {
+          font-size: 15px;
+          color: #8b949e;
+          max-width: 700px;
+          line-height: 1.5;
+        }
+
+        /* Grid Infographic Section */
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 16px;
+          margin-top: 16px;
+        }
+        .card {
+          background: rgba(22, 27, 34, 0.7);
+          border: 1px solid #30363d;
+          border-radius: 10px;
+          padding: 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+        .card-icon {
+          font-size: 18px;
+        }
+        .card-title {
+          font-size: 14px;
+          font-weight: 600;
+          color: #f0f6fc;
+        }
+        .card-desc {
+          font-size: 12px;
+          color: #8b949e;
+          line-height: 1.4;
+        }
+
+        /* Footer & Actions */
+        .footer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 20px;
+          padding-top: 16px;
+          border-top: 1px solid rgba(48, 54, 61, 0.6);
+        }
+        .tags {
+          display: flex;
+          gap: 8px;
+        }
+        .tag {
+          background: #21262d;
+          color: #8b949e;
+          font-size: 11px;
+          padding: 4px 10px;
+          border-radius: 6px;
+          border: 1px solid #30363d;
+        }
+        .cta-group {
+          display: flex;
+          gap: 12px;
+        }
+        .btn-primary {
+          background: #238636;
+          color: #ffffff;
+          font-size: 13px;
+          font-weight: 600;
+          padding: 8px 18px;
+          border-radius: 6px;
+          border: 1px solid rgba(240, 246, 252, 0.1);
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+        .btn-secondary {
+          background: #21262d;
+          color: #c9d1d9;
+          font-size: 13px;
+          font-weight: 600;
+          padding: 8px 18px;
+          border-radius: 6px;
+          border: 1px solid #30363d;
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
       </style>
-      <div class="container">
-        <span class="badge">v2.0 Released</span>
-        <h2 class="title">🚀 Next-Gen Cognitive Framework</h2>
-        <p>Full custom styling, gradients, and precise grid layouts right inside Markdown.</p>
+
+      <div class="banner">
+        <!-- Header -->
+        <div class="header">
+          <div class="brand">
+            <span class="brand-badge">FEATURED REPO</span>
+            <span class="brand-title">0w0 Studio</span>
+          </div>
+          <div class="status-pill">
+            <span class="dot"></span> Active R&amp;D Core
+          </div>
+        </div>
+
+        <!-- Hero Title -->
+        <div class="hero">
+          <h1 class="hero-title">Architecting <span>Cognitive Intelligence</span> &amp; Systems</h1>
+          <p class="hero-subtitle">High-performance research lab dedicated to autonomous cognitive models, custom hardware engineering, and advanced systems architecture.</p>
+        </div>
+
+        <!-- Infographic Cards -->
+        <div class="grid">
+          <div class="card">
+            <span class="card-icon">🧠</span>
+            <div class="card-title">Cognitive Research</div>
+            <div class="card-desc">Self-calibrating neural architectures &amp; autonomous agent framework.</div>
+          </div>
+          <div class="card">
+            <span class="card-icon">⚡</span>
+            <div class="card-title">Hardware Integration</div>
+            <div class="card-desc">Custom silicon design, embedded PCB logic, and precise robotic control.</div>
+          </div>
+          <div class="card">
+            <span class="card-icon">🛠️</span>
+            <div class="card-title">Pure Engineering</div>
+            <div class="card-desc">Low-latency Python algorithms, custom kernels, and systems programming.</div>
+          </div>
+        </div>
+
+        <!-- Footer / CTA -->
+        <div class="footer">
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Cognitive AI</span>
+            <span class="tag">Hardware</span>
+          </div>
+          <div class="cta-group">
+            <div class="btn-secondary">⭐ Star Project</div>
+            <div class="btn-primary">🚀 Explore Repositories →</div>
+          </div>
+        </div>
       </div>
     </div>
   </foreignObject>
